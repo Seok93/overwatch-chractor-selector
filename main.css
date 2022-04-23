@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.heros {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 15vh 0 5vh 0;
+}
+.heros > .hero {
+  background-color: #565556;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: skewX(-15deg);
+  transition: 
+    transform 0.1s ease-in,
+    background-color 0.5s;
+}
+.heros > .hero:hover {
+  background-color: #FBA133;
+  transform: scale(1.3) skewX(-15deg);
+}
+.heros > .hero > img {transform: skewX(15deg) translate(-15px); }
+footer { 
+  text-align: center;
+  padding: 20px;
+}
+footer > .logo { width: 500px; }
